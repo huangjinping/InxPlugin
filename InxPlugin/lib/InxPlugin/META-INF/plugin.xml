@@ -1,0 +1,61 @@
+<idea-plugin>
+    <id>com.your.company.unique.plugin.id</id>
+    <name>InxPlugin</name>
+    <version>3.0</version>
+    <vendor email="support@yourcompany.com" url="http://www.yourcompany.com">YourCompany</vendor>
+
+    <description><![CDATA[
+      InxPlugin.<br>
+      <em>InxPlugin</em>
+    ]]></description>
+
+    <change-notes><![CDATA[
+      InxPlugin<br>
+      <em>most HTML tInxPlugin</em>
+    ]]>
+    </change-notes>
+
+    <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
+    <idea-version since-build="173.0"/>
+
+    <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+         on how to target different products -->
+    <!--    <depends>com.intellij.modules.lang</depends>-->
+
+
+    <extensions defaultExtensionNs="com.intellij">
+        <!-- Add your extensions here -->
+        <!--        <internalFileTemplate name="MVPTemplateClass"></internalFileTemplate>-->
+    </extensions>
+
+
+    <actions>
+        <!-- Add your actions here -->
+        <action id="inxpl.T0PluginAction" class="com.inxpl.action.T0PluginAction" text="T0Action"
+                description="This  ToAction">
+            <add-to-group group-id="GenerateGroup" anchor="last"/>
+        </action>
+        <action id="inxpl.ExtractText" class="com.inxpl.action.ExtractTextAction" text="ExtractText"
+                description="This  ExtractText">
+            <add-to-group group-id="GenerateGroup" anchor="last"/>
+        </action>
+
+        <action id="action.XMLAction" class="com.inxpl.action.XMLAction" text="XMLAction" description="This  XMLAction">
+            <add-to-group group-id="GenerateGroup" anchor="last"/>
+        </action>
+        <action id="action.StringAction" class="com.inxpl.action.StringAction" text="StringAction"
+                description="This  changeStringAction">
+            <add-to-group group-id="GenerateGroup" anchor="last"/>
+        </action>
+        <action id="action.ChangeDrawableAction" text="ChangeDrawableAction"
+                class="com.inxpl.action.ChangeDrawableAction"
+                description="This  ChangeDrawableAction">
+            <add-to-group group-id="GenerateGroup" anchor="first"/>
+        </action>
+        <action id="action.JunkAction" class="com.inxpl.action.JunkAction" text="JunkAction"
+                description="This  JunkAction">
+            <add-to-group group-id="GenerateGroup" anchor="last"/>
+        </action>
+    </actions>
+
+</idea-plugin>
